@@ -1,0 +1,280 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box ;
+}
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar{
+    width: 18.75rem;
+    background-color: black;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    bottom: 0rem;
+    padding: 0.625rem;
+}
+
+.sidebar_nav{
+    background-color: #151515;
+    border-radius: 0.625rem;
+    padding: 1.25rem 0.625rem;
+    margin-bottom: 1.25rem;
+
+}
+
+.sidebar_nav_logo img{
+    width: 7.5rem;
+}
+
+.sidebar_nav ul{
+    list-style: none;
+}
+
+.sidebar_nav ul li{
+    padding: 0.625rem;
+}
+
+.sidebar_nav ul li a:hover{
+    color: #fff;
+}
+
+.sidebar_nav ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.sidebar_nav ul li a i{
+    font-size: 1.25rem;
+    margin-left: 0.300rem;
+    margin-right: 0.625rem;
+}
+
+.library::after{
+    content: '+';
+    float: right;
+    text-align: center;
+    font-weight: 2rem;
+
+}
+
+.create_playlist{
+    background: #302f2f;
+    padding: 1.25rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.sidebar_scroll{
+    height: 7.5rem;
+    overflow-y: auto;
+}
+
+.sidebar_scroll::-webkit-scrollbar{
+    background: transparent;
+}
+
+.create_playlist h4{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.create_playlist p{
+    color: #fff;
+    font-size: 0.825rem;
+}
+
+.create_playlist button{
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    font-weight: 500; 
+    
+}
+
+.privacy ul li a{
+    text-decoration: none;
+    color: #575656;
+    font-size: 0.688rem;
+    font-weight: 600;
+    margin: 0 0.313rem ;
+}
+
+.privacy ul li a:hover{
+    text-decoration: underline;
+    
+}
+
+.privacy ul{
+    list-style: none;
+}
+
+.privacy{
+    list-style: none;
+    margin-top: 1.25rem;
+}
+
+.privacy ul li{
+    padding: 0 0.75rem;
+    padding-bottom: 0.5rem;
+
+}
+
+.eng_btn{
+    padding: 1rem 1.25rem;
+}
+
+.eng_btn button{
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 0.063rem solid #818080;
+    outline: none;
+    color: #ffffff;
+    border-radius: 1.25rem;
+    margin: 1.25rem 0;
+}
+
+.eng_btn button:hover{
+    padding: 0.6rem 1.1rem;
+    border: 0.063rem solid #fff;
+}
+
+.main_section{
+    margin-left: 18.75rem;
+    background: #181818;
+    height: 100vh;
+    overflow: auto;
+}
+
+.main_section .top_nav{
+    padding: 1.25rem 1.875rem;
+    background: #101010;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+
+}
+
+.main_section .top_nav button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.main_section .top_nav .prev_btn button i{
+    color: #838181;
+    font-size: 1.5rem;
+    margin-right: 1.25rem;
+}
+
+.top_nav .lgn_btn .sgn_up{
+    color: #838181;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 1.25rem;
+    cursor: pointer;
+}
+
+.top_nav .lgn_btn .sgn_up:hover{
+    color: #fff;
+    font-size: 1.01rem;
+    font-weight: 600;
+}
+
+.top_nav .lgn_btn .lgn_up{
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+
+}
+
+.top_nav .lgn_btn .lgn_up:hover{
+    background: #838181;
+}
+
+.spotify_playlist{
+    padding: 1.25rem 2.5rem;
+}
+
+.spotify_playlist h2{
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+    cursor: pointer;
+} 
+
+.spotify_playlist h2:hover{
+    text-decoration: underline;
+
+}
+
+.spotify_playlist .card{
+    display: flex;
+    gap: 1.25rem;
+    overflow: hidden;
+}
+
+.spotify_playlist .card .item{
+    width: 13rem;
+    min-width: 8.75rem;
+    background-color: #272625;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.spotify_playlist .card .item:hover{
+    background-color:#3d3c3c ;
+}
+
+.spotify_playlist .card .item img{
+    width: 100%;
+    border-radius: 0.375rem;
+    margin-bottom: 0.625rem;
+}
+
+.spotify_playlist .item h4{
+    color: #fff;
+}
+
+.spotify_playlist .item p{
+    color: #8f8e8e;
+    font-size: 0.813rem;
+    margin-top: 0.625rem; 
+
+}
+
+.spotify_playlist .item p:hover{
+    text-decoration: underline;
+}
+
+.spotify_playlist .play_btn{
+    position:relative;
+} 
+
+.spotify_playlist .play_btn i{
+    position:absolute;
+    background:  #0be265;
+    border-radius: 50%;
+    padding: 0.625rem;
+    right: 0.5rem;
+    top: -2.5rem;
+    opacity: 0;
+    transform-origin: 3sec ease all;
+
+} 
+
+.spotify_playlist .card .item:hover .play_btn i{
+    opacity: 1;
+}
